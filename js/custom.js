@@ -12,7 +12,7 @@ $(function () {
 
 
 
-    $('.ham_btn').on('click', function () {
+    $('hd_ham_btn').on('click', function () {
         $(this).toggleClass('on');
         $(this).next().toggleClass('on');
     })
