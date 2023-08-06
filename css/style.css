@@ -558,10 +558,10 @@
 
 
 
-* {
+/* * {
     outline: 1rem solid tomato;
 }
-
+ */
 
 
 /*sec04*/
@@ -615,4 +615,64 @@
 .section04 .videobox .video {
 
     width: 100%;
+}
+
+
+.section04 .sns_grid .box {
+    position: absolute;
+    top: 20%;
+
+
+    gap: 0;
+    width: 40%;
+    height: 360rem;
+    position: absolute;
+    top: 65rem;
+    right: -30rem;
+    padding: 3px 0;
+    z-index: 2;
+    width: 55%;
+    text-align: center;
+
+}
+
+.section04 .sns_grid .box li {
+    display: inline-block;
+    width: 31.5%;
+
+    background: #fff;
+    height: 170rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+}
+
+.section04 .sns_grid .box i {
+
+    padding-bottom: 20rem;
+
+    color: #ddd;
+    font-size: 80rem;
+
+
+}
+
+.section04 .sns_grid .box a {
+
+    position: relative;
+    bottom: -20rem;
+
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.section04 .sns_grid .box li:hover {
+    background: #1E4387;
+}
+
+.section04 .sns_grid .box li a {
+    color: #fff;
 }
