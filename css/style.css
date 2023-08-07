@@ -29,7 +29,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 109rem;
+    text-align: center;
+    height: 110rem;
 
 }
 
@@ -38,7 +39,7 @@
     position: absolute;
     background: #06307a;
     left: 0;
-    height: 100rem;
+    height: 111rem;
     width: 400rem;
 
 }
@@ -46,12 +47,13 @@
 
 .header .logo a {
     position: absolute;
-    bottom: 25%;
-    left: 10%;
+    bottom: 30%;
+    left: 18%;
 }
 
 .gnb {
-    margin: 0 0 0 500rem;
+    margin: 0 0 0 550rem;
+
 }
 
 .gnb>ul {
@@ -72,7 +74,7 @@
 }
 
 .header .gnb_bar {
-    margin-right: 10rem;
+    margin-right: 0rem;
     display: flex;
     gap: 30rem;
 }
@@ -162,12 +164,12 @@
 
 
 .main_visual .main_slide .itm01 .slide_img {
-    height: 700rem;
+    height: 745rem;
     background: url(../images/main_slide1.png) no-repeat center center/cover;
 }
 
 .main_visual .main_slide .itm02 .slide_img {
-    height: 700rem;
+    height: 745rem;
     background: url(../images/main_slide2.png) no-repeat center center/cover;
 }
 
@@ -177,8 +179,24 @@
 }
 
 .main_visual .main_slide .itm03 .main_video {
-    height: 700rem;
+    height: 745rem;
 }
+
+
+.main_visual .main_slide .itm00 .main_vod {
+    height: 770rem;
+}
+
+.main_vod>video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
 
 .main_video>video {
     display: block;
@@ -386,7 +404,7 @@
     text-align: center;
     width: 25%;
     height: 100%;
-    right: 12.5%;
+    right: 13.2%;
     top: 28.5%;
     align-items: center;
 
@@ -479,7 +497,6 @@
     line-height: 49rem;
     border: solid 1rem #eaeaea;
 
-    border-right: none;
     font-size: 18rem;
 
     font-weight: bold;
@@ -535,21 +552,21 @@
 .bottom li:before {
     content: '';
     display: block;
-    width: 2px;
-    height: 2px;
+    width: 2rem;
+    height: 2rem;
     background: #555;
     position: relative;
     left: 1%;
     bottom: -13rem;
-    margin-top: -1px;
+    margin-top: -1rem;
 }
 
 .tap .grid_box {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    left: 62.3%;
-    top: 138%;
+    left: 61.7%;
+    top: 152.8%;
 
 }
 
@@ -558,21 +575,16 @@
 
 
 
-/* * {
-    outline: 1rem solid tomato;
-}
- */
-
-
 /*sec04*/
 
 .section04 {}
 
 .bg {
     padding-top: 30rem;
-    /* padding-bottom: 200px; */
+    /* padding-bottom: 200rem; */
     background: #f7f7f7;
     position: relative;
+    height: 530rem;
 }
 
 .bg:before {
@@ -592,8 +604,8 @@
 .section04 h3 {
 
 
-    margin-bottom: 30px;
-    font-size: 36px;
+    margin-bottom: 30rem;
+    font-size: 36rem;
     font-weight: 700;
 }
 
@@ -606,7 +618,7 @@
 
 
     width: 46%;
-    height: 340px;
+    height: 340rem;
     background: #000;
     overflow: hidden;
 }
@@ -622,14 +634,14 @@
     position: absolute;
     top: 20%;
 
-
+    display: block;
     gap: 0;
     width: 40%;
     height: 360rem;
-    position: absolute;
+
     top: 65rem;
     right: -30rem;
-    padding: 3px 0;
+    padding: 3rem 0;
     z-index: 2;
     width: 55%;
     text-align: center;
@@ -638,18 +650,18 @@
 
 .section04 .sns_grid .box li {
     display: inline-block;
-    width: 31.5%;
+    width: 29.8%;
 
     background: #fff;
-    height: 170rem;
+    height: 164rem;
     margin-right: 10rem;
     margin-bottom: 10rem;
 }
 
 .section04 .sns_grid .box i {
 
-    padding-bottom: 20rem;
 
+    display: block;
     color: #ddd;
     font-size: 80rem;
 
@@ -663,9 +675,20 @@
 
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 10rem;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18rem;
+
+}
+
+.section04 .sns_grid .box p {
+
+
+    display: block;
+    text-align: center;
+    padding: 10rem;
+    font-size: 18rem;
+
 }
 
 
@@ -673,6 +696,158 @@
     background: #1E4387;
 }
 
-.section04 .sns_grid .box li a {
+.section04 .sns_grid .box li:hover a {
     color: #fff;
+}
+
+
+/*sec05*/
+
+
+
+/* * {
+    outline: 1rem solid tomato;
+} */
+
+
+
+.section05 {
+    position: relative;
+    margin-top: 0rem;
+    margin-bottom: 50rem;
+    background: #133455;
+
+}
+
+
+
+.section05 .inner3 {}
+
+.section05 .inner3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+
+    text-align: center;
+    padding-top: 33rem;
+    padding-bottom: 30rem;
+    gap: 30rem;
+    cursor: pointer;
+}
+
+.section05 .inner3 .itm {
+    display: block;
+    width: 200rem;
+    color: #fff;
+}
+
+.section05 .inner3 .itm img {
+    padding-bottom: 10rem;
+}
+
+.section05 .inner3 .itm01 {
+    padding: 30rem 0;
+    background: rgb(133, 96, 168);
+}
+
+.section05 .inner3 .itm02 {
+    padding: 30rem 0;
+    background: url(../images/main_link_bg06.png)no-repeat center center/cover;
+
+
+}
+
+.section05 .inner3 .itm03 {
+    padding: 30rem 0;
+    background: #fff;
+    background: url(../images/main_link_bg04.png)no-repeat center center/cover;
+}
+
+.section05 .inner3 .itm04 {
+    padding: 30rem 0;
+    background: #fff;
+    color: #000;
+
+}
+
+.section05 .inner3 .itm05 {
+
+    padding: 30rem 0;
+    background: #fff;
+    background: url(../images/main_link_bg03.png)no-repeat center center/cover;
+}
+
+.section05 .inner3 .itm06 {
+
+    padding: 30rem 0;
+    background: rgb(162, 205, 104);
+}
+
+/*푸터*/
+
+.footer {
+    position: relative;
+    background: #e0e0e0;
+    height: 200rem;
+
+}
+
+
+.footer .human_policy {
+    position: relative;
+}
+
+.footer .human_policy ul {
+    padding-top: 40rem;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 30rem;
+    font-size: 17rem;
+}
+
+.footer .human_policy ul li {
+    position: relative;
+}
+
+.footer .human_policy ul li~li::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: #3b3b3b;
+    position: absolute;
+    left: -17.5rem;
+    margin-top: 6rem;
+    border-radius: 4rem;
+
+
+}
+
+.footer .human_policy ul .bold {
+    color: #f00;
+    font-weight: bold;
+}
+
+.footer .campus ul {
+    padding-top: 20rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 15rem;
+}
+
+
+.footer .copy ul {
+    padding-top: 15rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 14rem;
 }
