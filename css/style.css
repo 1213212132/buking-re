@@ -22,14 +22,16 @@
 
 .header .head_wrap {}
 
-
+.header {
+    position: relative;
+}
 
 
 .header .head_wrap .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+
     height: 110rem;
 
 }
@@ -72,6 +74,89 @@
 
 
 }
+
+
+.header .gnb>ul>li .snb {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 132rem;
+    left: 0;
+    z-index: 999;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 30rem;
+
+
+}
+
+.header .gnb>ul>li:hover .snb {
+    display: block;
+
+    height: 400rem;
+
+    transition: 0.6s;
+}
+
+
+.header .gnb>ul>li .box {
+
+    padding: 30rem 0rem;
+
+    position: absolute;
+    left: 21%;
+    width: 70%;
+    gap: 20rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+.header .gnb>ul>li .snb_menu li a {
+    color: #fff;
+    font-size: 14rem;
+
+}
+
+.header .gnb>ul>li::before {
+    content: "";
+    position: absolute;
+    top: 131px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #ddd;
+    background: rgba(9, 21, 40, 0.9);
+    z-index: 999;
+
+}
+
+.header .gnb>ul>li:hover::before {
+    height: 400rem;
+
+    transition: 0.6s;
+}
+
+
+
+.header .gnb>ul>li .menu_tit {
+    position: relative;
+    display: flex;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #0442a8;
+    font-size: 20rem;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 10rem;
+}
+
+
+
 
 .header .gnb_bar {
     margin-right: 0rem;
@@ -714,7 +799,7 @@
 .section05 {
     position: relative;
     margin-top: 0rem;
-    margin-bottom: 50rem;
+    /* margin-bottom: 50rem; */
     background: #133455;
 
 }
