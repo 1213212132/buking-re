@@ -1,5 +1,5 @@
 .wrap {
-    font-family: 'Pretendard-Regular';
+    font-family: 'NEXON Lv1 Gothic OTF';
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -54,7 +54,7 @@
 }
 
 .gnb {
-    margin: 0 0 0 550rem;
+    margin: 0 0 0 550px;
 }
 
 .gnb>ul {
@@ -63,12 +63,13 @@
 }
 
 .gnb>ul>li>a {
+
     display: block;
     line-height: 109rem;
     white-space: nowrap;
+    font-size: 22rem;
+    font-weight: 500;
 
-    font-size: 25rem;
-    font-weight: 700;
 
 
 
@@ -305,7 +306,7 @@
 @media (max-width : 768px) {
 
     .wrap {
-        font-family: 'Pretendard-Regular';
+        font-family: 'NEXON Lv1 Gothic OTF';
         overflow: hidden;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -1678,9 +1679,9 @@
         height: 2rem;
         background: #555;
         position: relative;
-        left: 1%;
+        left: 4%;
         bottom: -13rem;
-        margin-top: -1rem;
+        margin-top: rem;
     }
 
     .tap .grid_box {
