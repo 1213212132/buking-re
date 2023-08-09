@@ -337,7 +337,7 @@
         position: relative;
 
         /*r*/
-        background: #06307a;
+
 
 
     }
@@ -363,15 +363,15 @@
 
 
         /* r */
-        background: none;
 
-        width: 200rem;
+        z-index: 1000;
+        width: 100%;
 
 
         position: fixed;
-        height: 97rem;
-        inset: 0.8% 0 0 0;
-        z-index: 1000;
+        height: 100rem;
+        inset: 0 0 0 0;
+
 
     }
 
@@ -382,8 +382,8 @@
         left: 1%;
         /* r  */
 
-        bottom: 18%;
-        padding: 0 15rem 15rem 10rem;
+        bottom: 24%;
+
     }
 
     .gnb {
@@ -563,9 +563,9 @@
 
         /*r*/
         position: fixed;
-        inset: 3% 6% 0 auto;
+        inset: 2.1% 2% 0 auto;
         z-index: 1000;
-        width: 30px;
+        width: 10%;
 
     }
 
