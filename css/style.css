@@ -337,7 +337,7 @@
         position: relative;
 
         /*r*/
-
+        background: #06307a;
 
 
     }
@@ -363,13 +363,14 @@
 
 
         /* r */
+        background: none;
+
+        width: 200rem;
 
 
-        width: 100%;
-
-        height: 17%;
         position: fixed;
-
+        height: 97rem;
+        inset: 0.8% 0 0 0;
         z-index: 1000;
 
     }
@@ -562,12 +563,10 @@
 
         /*r*/
         position: fixed;
-        transform: translate(10%, 0);
-        right: 4%;
-        top: 5%;
+        inset: 3% 6% 0 auto;
         z-index: 1000;
         width: 30px;
-        height: 30px;
+
     }
 
     .ham_btn_mo,
