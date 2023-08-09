@@ -1,5 +1,5 @@
 .wrap {
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'Pretendard-Regular';
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -306,7 +306,7 @@
 @media (max-width : 768px) {
 
     .wrap {
-        font-family: 'NEXON Lv1 Gothic OTF';
+        font-family: 'Pretendard-RegulaF';
         overflow: hidden;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -1108,7 +1108,7 @@
 .section02 .arrows {
     position: absolute;
     top: 88%;
-    left: 56%;
+    left: 51.5%;
     transform: translate(-50%, -50%);
     z-index: 999;
     color: #fff;
@@ -1141,10 +1141,47 @@
     top: 0;
 }
 
-.section02 .pause {
+.section02 .start {
     position: absolute;
-    right: -55%;
+    top: 88%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: #fff;
+    max-width: 70rem;
+
+    width: 100%;
 }
+
+.section02 .start i {
+
+
+    border: 1rem solid #fff;
+    background: #111;
+    font-size: 30rem;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section02 .start .play {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.section02 .start .pause {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* .section02 .pause.on::before {
+    content: "\ea3e";
+} */
+
 
 .section02 .grid_box {
 
@@ -2020,7 +2057,7 @@
 .section05 {
     position: relative;
     margin-top: 0rem;
-    margin-bottom: 50rem;
+    margin-bottom: 0rem;
     background: #133455;
 
 }
@@ -2094,7 +2131,7 @@
     .section05 {
         position: relative;
         margin-top: 0rem;
-        margin-bottom: 50rem;
+        margin-bottom: 0rem;
         background: #133455;
 
     }
