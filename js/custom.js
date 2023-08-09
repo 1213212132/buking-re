@@ -1,18 +1,7 @@
 $(function () {
 
-    $(window).on('scroll', function () {
-        const sct = $(window).scrollTop();
-        if (sct > 0) {
-            $('.Header').addClass('on')
-        }
-        else {
-            $('.Header').removeClass('on')
-        }
-    });
 
-
-
-    $('hd_ham_btn').on('click', function () {
+    $('.hd_ham_btn').on('click', function () {
         $(this).toggleClass('on');
         $(this).next().toggleClass('on');
     })
@@ -23,8 +12,26 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
+        loop: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
+
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 
@@ -63,20 +70,6 @@ $(function () {
     });
 
 
-
-
-
-    $('.tap_box .top').on('click', function (e) {
-        e.preventDefault();
-        let idx = $(this).index();
-        $('.tap_on .bottom').eq(idx).addClass('on').siblings().removeClass('on');
-        $(this).addClass('on').siblings().removeClass('on');
-    });
-
-    // document.querySelector('.MainItm .arrows .left').addEventListener('click', () => {
-    //     ItmSlide.slidePrev();
-    // });
-
     $('.tap_box .top').on('click', function (e) {
         e.preventDefault();
         let idx = $(this).index();
@@ -85,57 +78,32 @@ $(function () {
     });
 
 
-
-    $('.top_tap .top').on('click', function (e) {
-        e.preventDefault();
-        let idx = $(this).index();
-        $('.bottom_tap .bottom').eq(idx).addClass('on').siblings().removeClass('on');
-        $(this).addClass('on').siblings().removeClass('on');
-    });
-
-
-    $('.first_slide').slick({
-        loop: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-
-
-        autoplay: true,
-        autoplaySpeed: 5000
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-    $('.mobile_btn').on('click', function () {
+    $('.ham_btn_mo').on('click', function () {
         $(this).toggleClass('on');
-        $('.Gnb').toggleClass('on');
-    });
+        $('.re_gnb').toggleClass('on');
+    })
 
-    $('.Gnb>ul>li>a').on('click', function (e) {
-        e.preventDefault();
-        $(this).next().stop().slideDown();
-        $(this).parent().siblings().find('.snb').stop().slideUp();
+    $('.re_gnb ul>li>a').on('click', function (e) {
+        if ($('.re_gnb').hasClass('on')) {
+
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.snb').stop().slideUp();
+        }
     });
 
     $(window).on('resize', function () {
-        $('.Gnb .snb').removeAttr('style')
+        $('.re_gnb').removeClass('on')
+    });
+
+    $('.re_gnb').on('wheel', function (e) {
+        if ($('.re_gnb').hasClass('on')) {
+            e.preventDefault();
+        }
     })
-
-
-
-
-
 
 
 
