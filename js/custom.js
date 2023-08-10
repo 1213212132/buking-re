@@ -34,6 +34,12 @@ $(function () {
         ]
     });
 
+    $('.hd_ham_btn').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
+
+
 
     $('.sec_slide').slick({
         slidesToShow: 1,
@@ -61,9 +67,22 @@ $(function () {
     })
 
 
-    $('.play').click(function () {
-        $('.visual').slick('slickPlay');
+    $('.pause').click(function () {
+        $('.sec_slide').slick('slickPause');
     });
+
+    $('.play').click(function () {
+        $('.sec_slide').slick('slickPlay');
+    });
+
+
+
+
+
+    $('.pause').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
 
     $('.arrows .pause').click(function () {
         $('.sec_slide').slick('slickPause');

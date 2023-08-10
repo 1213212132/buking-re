@@ -1365,6 +1365,21 @@
         font-size: 14rem;
     }
 
+    .section02 .start {
+        position: absolute;
+        top: 88%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        color: #fff;
+        max-width: 70rem;
+
+        width: 100%;
+
+        /*r*/
+        display: none;
+    }
+
 
     .section02 .arrows {
         position: absolute;
@@ -1478,6 +1493,10 @@
 
 /*section3 tap*/
 
+/* * {
+    outline: 1px solid turquoise;
+} */
+
 .section03 {
 
     padding-bottom: 50rem;
@@ -1536,8 +1555,13 @@
 }
 
 .bottom li {
+    position: relative;
     padding: 5rem 0;
+    border-bottom: 1px solid #ddd;
+    width: 890rem;
 }
+
+
 
 .bottom li a {
     display: block;
@@ -1566,7 +1590,7 @@
     height: 24rem;
     line-height: 24rem;
     position: absolute;
-    right: 490rem;
+    right: 10rem;
     top: 0;
 }
 
@@ -1589,7 +1613,7 @@
     grid-template-columns: repeat(1, 1fr);
 
     left: 61.7%;
-    top: 153.8%;
+    top: 154.1%;
 
 }
 
@@ -1665,6 +1689,8 @@
 
     .bottom li {
         padding: 5rem 0;
+
+        width: 100%;
     }
 
     .bottom li a {
@@ -1781,9 +1807,9 @@
 
 .section04 .videobox {
 
-
+    position: relative;
     width: 46%;
-    height: 340rem;
+    height: 343rem;
     background: #000;
     overflow: hidden;
 }
@@ -1792,9 +1818,14 @@
 .section04 .videobox video {
 
     width: 100%;
-    height: 100%;
+    height: 340rem;
+
 }
 
+
+.section04 .videobox .img {
+    width: 15%;
+}
 
 .section04 .sns_grid .box {
     position: absolute;
@@ -1805,8 +1836,8 @@
     width: 40%;
     height: 360rem;
 
-    top: 65rem;
-    right: -30rem;
+    top: 63rem;
+    right: -33rem;
 
     padding: 3rem 0;
     z-index: 2;
@@ -1820,9 +1851,9 @@
     width: 29.8%;
 
     background: #fff;
-    height: 164rem;
-    margin-right: 10rem;
-    margin-bottom: 10rem;
+    height: 168rem;
+    margin-right: 6rem;
+    margin-bottom: 6rem;
 }
 
 .section04 .sns_grid .box i {
@@ -2220,7 +2251,7 @@
 .footer {
     position: relative;
     background: #e0e0e0;
-    height: 200rem;
+    height: 190rem;
 
 }
 
@@ -2264,7 +2295,7 @@
 }
 
 .footer .campus ul {
-    padding-top: 20rem;
+    padding-top: 25rem;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -2274,14 +2305,16 @@
 }
 
 
+
 .footer .copy ul {
-    padding-top: 15rem;
+    padding-top: 25rem;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     font-size: 14rem;
+
 }
 
 @media (max-width: 768px) {
