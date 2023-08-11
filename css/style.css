@@ -1612,8 +1612,10 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
+
+    width: 100%;
     left: 61.7%;
-    top: 154.1%;
+    top: 161%;
 
 }
 
@@ -1747,6 +1749,7 @@
     }
 
     .tap .grid_box {
+
         position: absolute;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
